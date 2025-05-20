@@ -1,0 +1,2181 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "glog-b5cdc4c7-8885-4d18-97db-5300987569b4",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-c0d62fa9-1384-4845-950f-f496d1151994",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-89590996-cbe0-47c9-b583-42b35bbb65d2",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-c02e3b4b-f487-44df-9be4-b7f51d49c4e8",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-23c7544b-adf2-4211-b598-f4a3cc547dd0",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-92fe38bf-b337-4eda-8484-993e817d8a1b",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-5bd11cef-84fb-44f4-814a-99238bcf3686",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-f4c1899c-efbd-418d-9768-c557766ddf7a",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-0423904c-d112-49f4-b0ca-1b2c4a212c0a",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-fda9e554-f02d-4a83-bf04-87512a9be477",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-24105c11-5397-4dc0-bcd1-1aeb524ef21c",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe \"Detection of Prohibited C Function (strncpy)\" vulnerability arises when the `strncpy` function is used improperly in C++ programming. The `strncpy` function is intended to copy a specified number of characters from one string to another. However, it does not guarantee null-termination of the destination string if the source string is longer than the specified number of characters. This can lead to buffer overflows, data corruption, and potential security vulnerabilities if the destination buffer is not properly managed.\n\n### General Mitigation Advice\n\n1. **Use Safer Alternatives**: Consider using safer string handling functions like `strlcpy` or `snprintf` that ensure null-termination of the destination buffer.\n2. **Manual Null-Termination**: If `strncpy` must be used, ensure that the destination buffer is manually null-terminated.\n3. **Buffer Size Management**: Always ensure that the destination buffer is large enough to hold the source string plus the null-terminator.\n4. **Static Analysis Tools**: Use static analysis tools to detect and warn about unsafe string operations in your code.\n\n### Source Code Fix Recommendation\n\nGiven the specific vulnerability sink:\n\n```cpp\nstrncpy(buffer, buf_local, buf_len);\n```\n\nA safer approach would be:\n\n```cpp\n#include <cstring> // Required for strncpy\n\n// Ensure buffer is large enough to hold buf_local and a null-terminator\nif (buf_len > 0) {\n    strncpy(buffer, buf_local, buf_len - 1);\n    buffer[buf_len - 1] = '\\0'; // Manually null-terminate\n}\n```\n\n### Library Dependencies\n\nTo execute the code example properly, the following library is required:\n\n- `<cstring>`: This library is required for the `strncpy` function.\n\n### Relevant Resources\n\n- [OWASP C++ Secure Coding Practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)\n- [Common Weakness Enumeration (CWE-120: Buffer Copy without Checking Size of Input)](https://cwe.mitre.org/data/definitions/120.html)\n\nThese links are verified to be active and accessible to anonymous users."
+              },
+              "properties": {
+                "tags": [
+                  "DS111237"
+                ]
+              }
+            },
+            {
+              "id": "glog-723aae85-b647-4548-b5fb-359f760be618",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ refers to the use of insecure C library functions that can lead to various security issues such as buffer overflows, format string vulnerabilities, integer overflows, etc. These functions are often prohibited in secure coding standards and should be avoided.\n\nIn this case, the `fopen` function is used, which can lead to vulnerabilities if not used correctly. The `fopen` function opens a file and returns a pointer to the file. If the file does not exist or cannot be found, the function returns a null pointer. This can lead to null pointer dereferencing if not handled correctly.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to use safer alternatives to `fopen` such as `fopen_s` (in C11) or file stream objects in C++. These alternatives provide better error handling and are less prone to vulnerabilities.\n\n## Source Code Fix Recommendation\n\nReplace the `fopen` function with `fopen_s` or file stream objects. Here is an example of how to use `fopen_s`:\n\n```cpp\nFILE* fp = NULL;\nerrno_t err = fopen_s(&fp, \"file.txt\", \"r\");\nif (err != 0) {\n    // Handle error\n} else {\n    // Use file\n    fclose(fp);\n}\n```\n\nAnd here is an example of how to use file stream objects:\n\n```cpp\n#include <fstream>\n\nstd::ifstream file(\"file.txt\");\nif (!file) {\n    // Handle error\n} else {\n    // Use file\n    file.close();\n}\n```\n\n## Library Dependencies\n\nThe code examples above require the following library dependencies:\n\n- `<stdio.h>` or `<cstdio>` for `fopen_s`\n- `<fstream>` for file stream objects\n\n## References\n"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-fef8d512-9c2a-4ef0-af29-1ecc8352f280",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-0bc33562-8150-4321-97bb-9ecbd9f74185",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-043e4a8d-4a94-41f9-a111-5b2cf6526aa5",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-5e900765-5797-4385-ae33-c5d19fba2963",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-4bdea5df-391d-49ba-b8c6-87aab694c698",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe \"Detected Issue with C Function (malloc)\" vulnerability in C++ typically arises from improper use of the `malloc` function, which is used to allocate memory dynamically. The specific vulnerability sink in the code example `malloc(buf_len * sizeof(char))` can lead to several issues, such as integer overflow, buffer overflow, or memory allocation errors, if `buf_len` is not properly validated. This can result in undefined behavior, crashes, or security vulnerabilities like arbitrary code execution.\n\n### General Mitigation Advice\n\n1. **Input Validation**: Always validate input values to ensure they are within expected ranges before using them in memory allocation functions.\n2. **Check for Integer Overflow**: Ensure that the multiplication `buf_len * sizeof(char)` does not result in an integer overflow.\n3. **Check Return Value**: Always check the return value of `malloc` to ensure that memory allocation was successful.\n4. **Use Safer Alternatives**: Consider using safer alternatives like `calloc`, which initializes the allocated memory to zero, or C++ constructs like `std::vector` or `std::unique_ptr` for automatic memory management.\n\n### Source Code Fix Recommendation\n\n```cpp\n#include <iostream>\n#include <limits>\n\nint main() {\n    size_t buf_len = 100; // Example buffer length\n    if (buf_len > std::numeric_limits<size_t>::max() / sizeof(char)) {\n        std::cerr << \"Buffer length is too large, potential overflow detected.\" << std::endl;\n        return 1;\n    }\n\n    char* buffer = static_cast<char*>(malloc(buf_len * sizeof(char)));\n    if (buffer == nullptr) {\n        std::cerr << \"Memory allocation failed.\" << std::endl;\n        return 1;\n    }\n\n    // Use the buffer...\n\n    free(buffer);\n    return 0;\n}\n```\n\n### Library Dependencies\n\n- `<iostream>`: Required for input and output operations.\n- `<limits>`: Required for checking the maximum size of `size_t`.\n\n### OWASP Resources\n\n- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)\n- [OWASP Secure Coding Practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-190: Integer Overflow or Wraparound](https://cwe.mitre.org/data/definitions/190.html)\n- [CWE-401: Missing Release of Memory after Effective Lifetime](https://cwe.mitre.org/data/definitions/401.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS161085"
+                ]
+              }
+            },
+            {
+              "id": "glog-cbbb2b24-4e95-4e0d-80c6-9c6800c385ef",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-8726f7e8-4592-4f7c-895a-dd200d47aeeb",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-a5877eae-5f76-46aa-9ef5-3e985c56a92b",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-5b09ad72-02f6-46f6-be00-f36171195e9a",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-daa280ca-95f0-4077-a7ae-3f76c647ceb7",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe \"Detection of Prohibited C Function\" vulnerability in C++ programming arises when unsafe functions from the C standard library are used. These functions, such as `atoi`, do not provide error handling and can lead to undefined behavior, crashes, or security vulnerabilities if they process unexpected input. The `atoi` function, in particular, converts a string to an integer but does not handle errors like non-numeric input or overflow, which can lead to incorrect program behavior or security issues.\n\n### General Mitigation Advice\n\nTo mitigate the risks associated with using `atoi`, it is recommended to use safer alternatives that provide error handling. In C++, the `std::stoi` function is a better choice as it throws exceptions on errors, allowing the program to handle them gracefully.\n\n### Source Code Fix Recommendation\n\nReplace the usage of `atoi` with `std::stoi` to ensure proper error handling. Here's an example of how to refactor the code:\n\n```cpp\n#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string input = \"123\";\n    try {\n        int number = std::stoi(input);\n        std::cout << \"Converted number: \" << number << std::endl;\n    } catch (const std::invalid_argument& e) {\n        std::cerr << \"Invalid input: not a number\" << std::endl;\n    } catch (const std::out_of_range& e) {\n        std::cerr << \"Invalid input: number out of range\" << std::endl;\n    }\n    return 0;\n}\n```\n\n### Library Dependencies\n\nTo execute the above code, the following standard C++ libraries are required:\n\n- `<iostream>`: For input and output stream operations.\n- `<string>`: For using the `std::string` class.\n- `<stdexcept>`: For handling exceptions like `std::invalid_argument` and `std::out_of_range`.\n\n### Relevant Links\n\n- [OWASP Secure Coding Practices - Quick Reference Guide](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)\n- [Common Weakness Enumeration - CWE-676: Use of Potentially Dangerous Function](https://cwe.mitre.org/data/definitions/676.html)\n\nThese links are verified to be active and accessible to anonymous users."
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-b8942e18-8399-4a8b-9bc8-85d995db432f",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-b3f30048-1473-43c2-a0ed-6fe3674ede63",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe \"Detected Use of Prohibited C Function (strncpy)\" vulnerability arises when the `strncpy` function is used improperly, potentially leading to buffer overflows or data truncation. In C++, `strncpy` is often used to copy a specified number of characters from one string to another. However, if the destination buffer is not large enough to hold the copied data, it can result in a buffer overflow, which is a common security vulnerability. Additionally, `strncpy` does not null-terminate the destination string if the source string is longer than the specified number of characters, which can lead to undefined behavior when the destination string is used.\n\n### General Mitigation Advice\n\n1. **Use Safer Alternatives**: Consider using safer alternatives like `strlcpy` or `snprintf`, which are designed to prevent buffer overflows and ensure null-termination.\n2. **Proper Buffer Sizing**: Ensure that the destination buffer is large enough to hold the copied data, including the null terminator.\n3. **Manual Null-Termination**: If using `strncpy`, manually null-terminate the destination buffer to prevent undefined behavior.\n\n### Source Code Fix Recommendation\n\nGiven the specific vulnerability sink:\n\n```cpp\nstrncpy(model_num, loc+1, 4);\n```\n\nA safer alternative using `snprintf` would be:\n\n```cpp\nsnprintf(model_num, sizeof(model_num), \"%.4s\", loc + 1);\n```\n\nThis ensures that the destination buffer is null-terminated and prevents buffer overflow by specifying the maximum number of characters to copy.\n\n### Library Dependencies\n\nTo execute the code example properly, the following standard library is required:\n\n```cpp\n#include <cstdio>  // For snprintf\n```\n\n### Relevant Resources\n\n- [OWASP C++ Secure Coding Practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)\n- [Common Weakness Enumeration: CWE-120](https://cwe.mitre.org/data/definitions/120.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS111237"
+                ]
+              }
+            },
+            {
+              "id": "glog-5e203ce9-c991-442a-97a1-5d6d29e18705",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-25a672d7-db96-41a2-b256-b3fd012a3406",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-2c09d191-6b23-4c67-9d7f-d77c01e1ece2",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-e4f186c5-e811-4103-a3cd-c6763961c9ae",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-32c86417-f86f-41bd-8bd2-b58c364db833",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-19b9e84d-c56e-48e2-8680-ff0042de402b",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-8ded5286-7793-46d7-86ba-9ea06f3da749",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-8826f306-1dbb-4de2-9714-97f4e11fbaeb",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-8c9336af-6966-4c6d-acbd-2e447817d7e0",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected C Function Prohibited\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are considered unsafe due to their potential to cause buffer overflow, format string vulnerabilities, or other types of security issues. One such function is `printf`.\n\nThe `printf` function is a common function in C programming for output formatting. However, it can lead to vulnerabilities if not used correctly. For instance, if user-supplied data is passed directly to `printf` as the format string, it can lead to a format string vulnerability, which can allow an attacker to read or write to arbitrary memory, leading to information disclosure or code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `printf` and similar functions with variable format strings. Instead, use safer alternatives that do not allow for format string vulnerabilities, such as `puts` or `fputs` for simple string output. If formatted output is necessary, ensure that the format string is a constant and not user-supplied data.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```cpp\nchar* user_supplied_string;\n// ...\nprintf(user_supplied_string);\n```\n\nUse:\n\n```cpp\nchar* user_supplied_string;\n// ...\nputs(user_supplied_string);\n```\n\nOr:\n\n```cpp\nchar* user_supplied_string;\n// ...\nfputs(user_supplied_string, stdout);\n```\n\n## Library Dependencies\n\nThe code examples above require the C standard library, which is typically included with `#include <stdio.h>`.\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-33367f12-be73-436b-b38e-1f4bccf943fa",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-bb552dfc-6928-4027-a8b9-1eb0b0cf6253",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-3a27f684-abb7-4884-af2c-80097b05d0fb",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-648b0d99-88a8-497f-8b68-52b932b31686",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-4a613392-abfb-4ae8-888f-d99bd9f003c8",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-3d2c8433-0f3a-4416-9f35-a8a7a49a4e4e",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflows, format string vulnerabilities, or other issues. These functions are often prohibited in secure coding standards. One such function is `fprintf`.\n\nThe `fprintf` function can lead to vulnerabilities if not used correctly. It can cause format string vulnerabilities if the format string is not a constant, or if it's a string that can be controlled by an attacker. This can lead to arbitrary code execution, crashes, or information leaks.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using `fprintf` and other similar functions that do not perform bounds checking. Instead, use safer alternatives that do perform bounds checking, such as `snprintf`. Always ensure that format strings are constants and cannot be controlled by an attacker.\n\n## Source Code Fix Recommendation\n\nReplace `fprintf` with `snprintf` as shown below:\n\n```cpp\n#include <cstdio>\n\n// Old vulnerable code\nvoid vulnerable_code(FILE* file, const char* data) {\n    fprintf(file, data);\n}\n\n// New secure code\nvoid secure_code(FILE* file, const char* data) {\n    char buffer[1024];\n    snprintf(buffer, sizeof(buffer), \"%s\", data);\n    fputs(buffer, file);\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library to execute properly:\n\n- `<cstdio>`\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "glog-b5cdc4c7-8885-4d18-97db-5300987569b4",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kernels/armsve/3/old/sup/bli_gemmsup_cv_armsve_asm_d2vx10_unindexed.c"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 4,
+                  "endLine": 67,
+                  "endColumn": 11,
+                  "charOffset": 2599,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-c0d62fa9-1384-4845-950f-f496d1151994",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_error.c"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 1,
+                  "endLine": 124,
+                  "endColumn": 8,
+                  "charOffset": 8059,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-89590996-cbe0-47c9-b583-42b35bbb65d2",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kernels/armsve/3/old/sup/bli_gemmsup_rv_armsve_asm_d2vx10_unindexed.c"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 4,
+                  "endLine": 67,
+                  "endColumn": 11,
+                  "charOffset": 2590,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-c02e3b4b-f487-44df-9be4-b7f51d49c4e8",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_error.c"
+                },
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 1,
+                  "endLine": 122,
+                  "endColumn": 8,
+                  "charOffset": 7951,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-23c7544b-adf2-4211-b598-f4a3cc547dd0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_error.c"
+                },
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 1,
+                  "endLine": 123,
+                  "endColumn": 8,
+                  "charOffset": 7977,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-92fe38bf-b337-4eda-8484-993e817d8a1b",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_gks.c"
+                },
+                "region": {
+                  "startLine": 431,
+                  "startColumn": 1,
+                  "endLine": 431,
+                  "endColumn": 7,
+                  "charOffset": 17273,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-5bd11cef-84fb-44f4-814a-99238bcf3686",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_gks.c"
+                },
+                "region": {
+                  "startLine": 273,
+                  "startColumn": 4,
+                  "endLine": 273,
+                  "endColumn": 10,
+                  "charOffset": 11742,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-f4c1899c-efbd-418d-9768-c557766ddf7a",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_gks.c"
+                },
+                "region": {
+                  "startLine": 418,
+                  "startColumn": 1,
+                  "endLine": 418,
+                  "endColumn": 7,
+                  "charOffset": 16767,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-0423904c-d112-49f4-b0ca-1b2c4a212c0a",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_gks.c"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 6,
+                  "endLine": 265,
+                  "endColumn": 12,
+                  "charOffset": 11575,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-fda9e554-f02d-4a83-bf04-87512a9be477",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1905,
+                  "startColumn": 5,
+                  "endLine": 1905,
+                  "endColumn": 11,
+                  "charOffset": 57285,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-24105c11-5397-4dc0-bcd1-1aeb524ef21c",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Banned C function detected (strncpy)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1908,
+                  "startColumn": 3,
+                  "endLine": 1908,
+                  "endColumn": 40,
+                  "charOffset": 57396,
+                  "charLength": 37,
+                  "snippet": {
+                    "text": "strncpy( buffer, buf_local, buf_len )",
+                    "rendered": {
+                      "text": "strncpy( buffer, buf_local, buf_len )",
+                      "markdown": "`strncpy( buffer, buf_local, buf_len )`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "strncpy is dangerous, as if the source contains 'n' or more characters, it will not null terminate the destination."
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "frame/base/bli_cpuid.c"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 57396,
+                        "charLength": 37
+                      },
+                      "insertedContent": {
+                        "text": "strcpy_s( buffer,  buf_len ,  buf_local)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "description": {
+                "text": "strncpy is dangerous, as if the source contains 'n' or more characters, it will not null terminate the destination."
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "frame/base/bli_cpuid.c"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 57396,
+                        "charLength": 37
+                      },
+                      "insertedContent": {
+                        "text": "strlcpy( buffer,  buf_local,  buf_len )"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-723aae85-b647-4548-b5fb-359f760be618",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1883,
+                  "startColumn": 16,
+                  "endLine": 1883,
+                  "endColumn": 21,
+                  "charOffset": 56553,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "fopen",
+                    "rendered": {
+                      "text": "fopen",
+                      "markdown": "`fopen`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-fef8d512-9c2a-4ef0-af29-1ecc8352f280",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1892,
+                  "startColumn": 4,
+                  "endLine": 1892,
+                  "endColumn": 10,
+                  "charOffset": 56818,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-0bc33562-8150-4321-97bb-9ecbd9f74185",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1865,
+                  "startColumn": 3,
+                  "endLine": 1865,
+                  "endColumn": 9,
+                  "charOffset": 55948,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-043e4a8d-4a94-41f9-a111-5b2cf6526aa5",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1836,
+                  "startColumn": 1,
+                  "endLine": 1836,
+                  "endColumn": 7,
+                  "charOffset": 55046,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-5e900765-5797-4385-ae33-c5d19fba2963",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1835,
+                  "startColumn": 1,
+                  "endLine": 1835,
+                  "endColumn": 7,
+                  "charOffset": 54975,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-4bdea5df-391d-49ba-b8c6-87aab694c698",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Problematic C function detected (malloc)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1880,
+                  "startColumn": 19,
+                  "endLine": 1880,
+                  "endColumn": 51,
+                  "charOffset": 56474,
+                  "charLength": 32,
+                  "snippet": {
+                    "text": "malloc( buf_len * sizeof( char )",
+                    "rendered": {
+                      "text": "malloc( buf_len * sizeof( char )",
+                      "markdown": "`malloc( buf_len * sizeof( char )`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "If the value provided to malloc is the result of unsafe integer math, it can result in an exploitable condition. "
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "frame/base/bli_cpuid.c"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 56474,
+                        "charLength": 32
+                      },
+                      "insertedContent": {
+                        "text": "calloc(<number of elements>, <size of each element>)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "BestPractice",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.ProblematicFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-cbbb2b24-4e95-4e0d-80c6-9c6800c385ef",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1857,
+                  "startColumn": 3,
+                  "endLine": 1857,
+                  "endColumn": 9,
+                  "charOffset": 55747,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-8726f7e8-4592-4f7c-895a-dd200d47aeeb",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1848,
+                  "startColumn": 3,
+                  "endLine": 1848,
+                  "endColumn": 9,
+                  "charOffset": 55430,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-a5877eae-5f76-46aa-9ef5-3e985c56a92b",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1834,
+                  "startColumn": 1,
+                  "endLine": 1834,
+                  "endColumn": 7,
+                  "charOffset": 54904,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-5b09ad72-02f6-46f6-be00-f36171195e9a",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1819,
+                  "startColumn": 3,
+                  "endLine": 1819,
+                  "endColumn": 9,
+                  "charOffset": 54334,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-daa280ca-95f0-4077-a7ae-3f76c647ceb7",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1533,
+                  "startColumn": 8,
+                  "endLine": 1533,
+                  "endColumn": 12,
+                  "charOffset": 47208,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "atoi",
+                    "rendered": {
+                      "text": "atoi",
+                      "markdown": "`atoi`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-b8942e18-8399-4a8b-9bc8-85d995db432f",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1479,
+                  "startColumn": 3,
+                  "endLine": 1479,
+                  "endColumn": 9,
+                  "charOffset": 45714,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-b3f30048-1473-43c2-a0ed-6fe3674ede63",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Banned C function detected (strncpy)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1530,
+                  "startColumn": 2,
+                  "endLine": 1530,
+                  "endColumn": 32,
+                  "charOffset": 47105,
+                  "charLength": 30,
+                  "snippet": {
+                    "text": "strncpy( model_num, loc+1, 4 )",
+                    "rendered": {
+                      "text": "strncpy( model_num, loc+1, 4 )",
+                      "markdown": "`strncpy( model_num, loc+1, 4 )`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "strncpy is dangerous, as if the source contains 'n' or more characters, it will not null terminate the destination."
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "frame/base/bli_cpuid.c"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 47105,
+                        "charLength": 30
+                      },
+                      "insertedContent": {
+                        "text": "strcpy_s( model_num,  4 ,  loc+1)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "description": {
+                "text": "strncpy is dangerous, as if the source contains 'n' or more characters, it will not null terminate the destination."
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "frame/base/bli_cpuid.c"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 47105,
+                        "charLength": 30
+                      },
+                      "insertedContent": {
+                        "text": "strlcpy( model_num,  loc+1,  4 )"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-5e203ce9-c991-442a-97a1-5d6d29e18705",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1471,
+                  "startColumn": 3,
+                  "endLine": 1471,
+                  "endColumn": 9,
+                  "charOffset": 45463,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-25a672d7-db96-41a2-b256-b3fd012a3406",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1403,
+                  "startColumn": 3,
+                  "endLine": 1403,
+                  "endColumn": 10,
+                  "charOffset": 43733,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-2c09d191-6b23-4c67-9d7f-d77c01e1ece2",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1402,
+                  "startColumn": 3,
+                  "endLine": 1402,
+                  "endColumn": 10,
+                  "charOffset": 43643,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-e4f186c5-e811-4103-a3cd-c6763961c9ae",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1401,
+                  "startColumn": 3,
+                  "endLine": 1401,
+                  "endColumn": 10,
+                  "charOffset": 43555,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-32c86417-f86f-41bd-8bd2-b58c364db833",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1398,
+                  "startColumn": 3,
+                  "endLine": 1398,
+                  "endColumn": 10,
+                  "charOffset": 43309,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-19b9e84d-c56e-48e2-8680-ff0042de402b",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1400,
+                  "startColumn": 3,
+                  "endLine": 1400,
+                  "endColumn": 10,
+                  "charOffset": 43473,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-8ded5286-7793-46d7-86ba-9ea06f3da749",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1399,
+                  "startColumn": 3,
+                  "endLine": 1399,
+                  "endColumn": 10,
+                  "charOffset": 43391,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-8826f306-1dbb-4de2-9714-97f4e11fbaeb",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1395,
+                  "startColumn": 3,
+                  "endLine": 1395,
+                  "endColumn": 10,
+                  "charOffset": 43059,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-8c9336af-6966-4c6d-acbd-2e447817d7e0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1463,
+                  "startColumn": 3,
+                  "endLine": 1463,
+                  "endColumn": 9,
+                  "charOffset": 45212,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf",
+                    "rendered": {
+                      "text": "printf",
+                      "markdown": "`printf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-33367f12-be73-436b-b38e-1f4bccf943fa",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1397,
+                  "startColumn": 3,
+                  "endLine": 1397,
+                  "endColumn": 10,
+                  "charOffset": 43229,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-bb552dfc-6928-4027-a8b9-1eb0b0cf6253",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1396,
+                  "startColumn": 3,
+                  "endLine": 1396,
+                  "endColumn": 10,
+                  "charOffset": 43144,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-3a27f684-abb7-4884-af2c-80097b05d0fb",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1394,
+                  "startColumn": 3,
+                  "endLine": 1394,
+                  "endColumn": 10,
+                  "charOffset": 42975,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-648b0d99-88a8-497f-8b68-52b932b31686",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1393,
+                  "startColumn": 3,
+                  "endLine": 1393,
+                  "endColumn": 10,
+                  "charOffset": 42893,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-4a613392-abfb-4ae8-888f-d99bd9f003c8",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1392,
+                  "startColumn": 3,
+                  "endLine": 1392,
+                  "endColumn": 10,
+                  "charOffset": 42851,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-3d2c8433-0f3a-4416-9f35-a8a7a49a4e4e",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "frame/base/bli_cpuid.c"
+                },
+                "region": {
+                  "startLine": 1337,
+                  "startColumn": 5,
+                  "endLine": 1337,
+                  "endColumn": 12,
+                  "charOffset": 40872,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "fprintf",
+                    "rendered": {
+                      "text": "fprintf",
+                      "markdown": "`fprintf`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
