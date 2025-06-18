@@ -22,6 +22,7 @@ jobs:
         uses: ./.github/glog-action
         with:
           lang: 'cpp'
+          ignore: 'gtestsuite,examples'
           debug: 'false'
           upload: 'true'
           github-token: ${{ secrets.PAT_TOKEN }}
