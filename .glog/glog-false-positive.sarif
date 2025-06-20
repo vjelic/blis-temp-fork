@@ -35,7 +35,62 @@
                 "precision": "high",
                 "problem.severity": "recommendation",
                 "tags": [
-                  "DS176209",
+                  "DS176209"
+                ]
+              }
+            },
+            {
+              "id": "DS176209",
+              "name": "SuspiciousComment",
+              "shortDescription": {
+                "text": "A \"TODO\" or similar was left in source code, possibly indicating incomplete functionality"
+              },
+              "fullDescription": {
+                "text": "Suspicious comment: A \"TODO\" or similar was left in source code, possibly indicating incomplete functionality"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS176209.md",
+              "help": {
+                "text": "A \"TODO\" or similar was left in source code, possibly indicating incomplete functionality",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS176209.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS176209.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "ManualReview",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "recommendation",
+                "tags": [
+                  "DS176209"
+                ]
+              }
+            },
+            {
+              "id": "DS176209",
+              "name": "SuspiciousComment",
+              "shortDescription": {
+                "text": "A \"TODO\" or similar was left in source code, possibly indicating incomplete functionality"
+              },
+              "fullDescription": {
+                "text": "Suspicious comment: A \"TODO\" or similar was left in source code, possibly indicating incomplete functionality"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS176209.md",
+              "help": {
+                "text": "A \"TODO\" or similar was left in source code, possibly indicating incomplete functionality",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS176209.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS176209.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "ManualReview",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "recommendation",
+                "tags": [
                   "DS176209"
                 ]
               }
@@ -62,14 +117,14 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen4/lpgemm/u8s8s32/lpgemm_packa_amd512vnni.c"
+                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
                 },
                 "region": {
-                  "startLine": 252,
-                  "startColumn": 4,
-                  "endLine": 252,
-                  "endColumn": 8,
-                  "charOffset": 8784,
+                  "startLine": 1525,
+                  "startColumn": 7,
+                  "endLine": 1525,
+                  "endColumn": 11,
+                  "charOffset": 53370,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -102,14 +157,14 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen4/lpgemm/s8s8s32/lpgemm_packa_s8_amd512vnni.c"
+                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
                 },
                 "region": {
-                  "startLine": 203,
-                  "startColumn": 4,
-                  "endLine": 203,
-                  "endColumn": 8,
-                  "charOffset": 7712,
+                  "startLine": 1001,
+                  "startColumn": 7,
+                  "endLine": 1001,
+                  "endColumn": 11,
+                  "charOffset": 35039,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -142,14 +197,14 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen4/lpgemm/s8s8s32/lpgemm_packa_s8_amd512vnni.c"
+                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
                 },
                 "region": {
-                  "startLine": 83,
-                  "startColumn": 3,
-                  "endLine": 83,
-                  "endColumn": 7,
-                  "charOffset": 2633,
+                  "startLine": 1540,
+                  "startColumn": 7,
+                  "endLine": 1540,
+                  "endColumn": 11,
+                  "charOffset": 53715,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -182,14 +237,134 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen4/lpgemm/u8s8s32/lpgemm_packa_amd512vnni.c"
+                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
                 },
                 "region": {
-                  "startLine": 132,
-                  "startColumn": 3,
-                  "endLine": 132,
-                  "endColumn": 7,
-                  "charOffset": 3704,
+                  "startLine": 978,
+                  "startColumn": 7,
+                  "endLine": 978,
+                  "endColumn": 11,
+                  "charOffset": 34520,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                },
+                "region": {
+                  "startLine": 668,
+                  "startColumn": 7,
+                  "endLine": 668,
+                  "endColumn": 11,
+                  "charOffset": 24029,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                },
+                "region": {
+                  "startLine": 694,
+                  "startColumn": 7,
+                  "endLine": 694,
+                  "endColumn": 11,
+                  "charOffset": 24608,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                },
+                "region": {
+                  "startLine": 364,
+                  "startColumn": 7,
+                  "endLine": 364,
+                  "endColumn": 11,
+                  "charOffset": 13338,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -230,6 +405,46 @@
                   "endLine": 1535,
                   "endColumn": 11,
                   "charOffset": 52861,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                },
+                "region": {
+                  "startLine": 1280,
+                  "startColumn": 7,
+                  "endLine": 1280,
+                  "endColumn": 11,
+                  "charOffset": 44721,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -342,6 +557,46 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
+                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                },
+                "region": {
+                  "startLine": 1260,
+                  "startColumn": 7,
+                  "endLine": 1260,
+                  "endColumn": 11,
+                  "charOffset": 44261,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
                   "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x4_mask.c"
                 },
                 "region": {
@@ -350,86 +605,6 @@
                   "endLine": 1258,
                   "endColumn": 11,
                   "charOffset": 43594,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x4_mask.c"
-                },
-                "region": {
-                  "startLine": 997,
-                  "startColumn": 7,
-                  "endLine": 997,
-                  "endColumn": 11,
-                  "charOffset": 34510,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x4_mask.c"
-                },
-                "region": {
-                  "startLine": 976,
-                  "startColumn": 7,
-                  "endLine": 976,
-                  "endColumn": 11,
-                  "charOffset": 33998,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -582,46 +757,6 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x4_mask.c"
-                },
-                "region": {
-                  "startLine": 338,
-                  "startColumn": 7,
-                  "endLine": 338,
-                  "endColumn": 11,
-                  "charOffset": 12587,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
                   "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x16_mask.c"
                 },
                 "region": {
@@ -630,46 +765,6 @@
                   "endLine": 1754,
                   "endColumn": 11,
                   "charOffset": 62291,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x16_mask.c"
-                },
-                "region": {
-                  "startLine": 1738,
-                  "startColumn": 7,
-                  "endLine": 1738,
-                  "endColumn": 11,
-                  "charOffset": 61909,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -750,46 +845,6 @@
                   "endLine": 1455,
                   "endColumn": 11,
                   "charOffset": 51717,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x16_mask.c"
-                },
-                "region": {
-                  "startLine": 1166,
-                  "startColumn": 7,
-                  "endLine": 1166,
-                  "endColumn": 11,
-                  "charOffset": 41120,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -945,46 +1000,6 @@
                   "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x16_mask.c"
                 },
                 "region": {
-                  "startLine": 430,
-                  "startColumn": 7,
-                  "endLine": 430,
-                  "endColumn": 11,
-                  "charOffset": 15644,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x16_mask.c"
-                },
-                "region": {
                   "startLine": 398,
                   "startColumn": 7,
                   "endLine": 398,
@@ -1022,14 +1037,14 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x4_mask.c"
                 },
                 "region": {
-                  "startLine": 1540,
+                  "startLine": 997,
                   "startColumn": 7,
-                  "endLine": 1540,
+                  "endLine": 997,
                   "endColumn": 11,
-                  "charOffset": 53715,
+                  "charOffset": 34510,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -1062,14 +1077,14 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                  "uri": "kernels/armsve/1m/old/bli_dpackm_armsve512_int_12xk.c"
                 },
                 "region": {
-                  "startLine": 1525,
-                  "startColumn": 7,
-                  "endLine": 1525,
-                  "endColumn": 11,
-                  "charOffset": 53370,
+                  "startLine": 44,
+                  "startColumn": 3,
+                  "endLine": 44,
+                  "endColumn": 7,
+                  "charOffset": 1889,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -1102,14 +1117,14 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                  "uri": "kernels/zen4/lpgemm/u8s8s32/lpgemm_packa_amd512vnni.c"
                 },
                 "region": {
-                  "startLine": 1280,
-                  "startColumn": 7,
-                  "endLine": 1280,
-                  "endColumn": 11,
-                  "charOffset": 44721,
+                  "startLine": 252,
+                  "startColumn": 4,
+                  "endLine": 252,
+                  "endColumn": 8,
+                  "charOffset": 8784,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -1142,14 +1157,14 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                  "uri": "kernels/zen4/lpgemm/u8s8s32/lpgemm_packa_amd512vnni.c"
                 },
                 "region": {
-                  "startLine": 1260,
-                  "startColumn": 7,
-                  "endLine": 1260,
-                  "endColumn": 11,
-                  "charOffset": 44261,
+                  "startLine": 132,
+                  "startColumn": 3,
+                  "endLine": 132,
+                  "endColumn": 7,
+                  "charOffset": 3704,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -1182,14 +1197,14 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                  "uri": "kernels/zen4/lpgemm/s8s8s32/lpgemm_packa_s8_amd512vnni.c"
                 },
                 "region": {
-                  "startLine": 1001,
-                  "startColumn": 7,
-                  "endLine": 1001,
-                  "endColumn": 11,
-                  "charOffset": 35039,
+                  "startLine": 203,
+                  "startColumn": 4,
+                  "endLine": 203,
+                  "endColumn": 8,
+                  "charOffset": 7712,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -1222,174 +1237,14 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
+                  "uri": "kernels/zen4/lpgemm/s8s8s32/lpgemm_packa_s8_amd512vnni.c"
                 },
                 "region": {
-                  "startLine": 978,
-                  "startColumn": 7,
-                  "endLine": 978,
-                  "endColumn": 11,
-                  "charOffset": 34520,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
-                },
-                "region": {
-                  "startLine": 694,
-                  "startColumn": 7,
-                  "endLine": 694,
-                  "endColumn": 11,
-                  "charOffset": 24608,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
-                },
-                "region": {
-                  "startLine": 668,
-                  "startColumn": 7,
-                  "endLine": 668,
-                  "endColumn": 11,
-                  "charOffset": 24029,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
-                },
-                "region": {
-                  "startLine": 364,
-                  "startColumn": 7,
-                  "endLine": 364,
-                  "endColumn": 11,
-                  "charOffset": 13338,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen/3/sup/s6x16/bli_gemmsup_rv_zen_asm_s5x8_mask.c"
-                },
-                "region": {
-                  "startLine": 335,
-                  "startColumn": 7,
-                  "endLine": 335,
-                  "endColumn": 11,
-                  "charOffset": 12699,
+                  "startLine": 83,
+                  "startColumn": 3,
+                  "endLine": 83,
+                  "endColumn": 7,
+                  "charOffset": 2633,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
@@ -1582,46 +1437,6 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kernels/armsve/1m/old/bli_dpackm_armsve512_int_12xk.c"
-                },
-                "region": {
-                  "startLine": 44,
-                  "startColumn": 3,
-                  "endLine": 44,
-                  "endColumn": 7,
-                  "charOffset": 1889,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
                   "uri": "kernels/armv8a/3/sup/bli_gemmsup_rv_armv8a_asm_d4x8n.c"
                 },
                 "region": {
@@ -1750,126 +1565,6 @@
                   "endLine": 439,
                   "endColumn": 9,
                   "charOffset": 18219,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "frame/3/gemm/bli_gemm_ker_var2.c"
-                },
-                "region": {
-                  "startLine": 178,
-                  "startColumn": 4,
-                  "endLine": 178,
-                  "endColumn": 8,
-                  "charOffset": 5595,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen4/3/bli_gemm_tiny_adapter_zen4.c"
-                },
-                "region": {
-                  "startLine": 47,
-                  "startColumn": 3,
-                  "endLine": 47,
-                  "endColumn": 7,
-                  "charOffset": 2054,
-                  "charLength": 4,
-                  "snippet": {
-                    "text": "TODO",
-                    "rendered": {
-                      "text": "TODO",
-                      "markdown": "`TODO`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "ManualReview",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Hygiene.Comment.Suspicious"
-            ]
-          }
-        },
-        {
-          "ruleId": "DS176209",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Suspicious comment"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "kernels/zen4/3/bli_gemm_tiny_adapter_zen4.c"
-                },
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 3,
-                  "endLine": 40,
-                  "endColumn": 7,
-                  "charOffset": 1804,
                   "charLength": 4,
                   "snippet": {
                     "text": "TODO",
